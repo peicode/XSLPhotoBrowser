@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = "XSLPhotoBrowser/Classes/*"
+  s.source_files  = "XSLPhotoBrowser/Classes/**/*.swift"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "Kingfisher"
+  #s.framework  = "Kingfisher"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
