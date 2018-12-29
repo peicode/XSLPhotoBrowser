@@ -34,12 +34,12 @@ Pod::Spec.new do |s|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
-  s.source       = { :git => "http://github.com/PEIcode/XSLPhotoBrowser.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/PEIcode/XSLPhotoBrowser.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = "XSLPhotoBrowser/Classes/*.swift"
+  s.source_files  = "XSLPhotoBrowser/Classes/*"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
