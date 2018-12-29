@@ -8,9 +8,9 @@
 
 import UIKit
 
-class XSLNetWorkImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
+open class XSLNetWorkImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
     /// 弱引用 PhotoBrowser
-    public weak var browser: XSLPhotoBrowser?
+    weak public var browser: XSLPhotoBrowser?
     let cellID = "XSLPhotoBrowserNetWorkCell"
     /// 共有多少项
     public var numberOfItemsCallback: () -> Int
@@ -27,19 +27,17 @@ class XSLNetWorkImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
         self.placehodleImageCallback = placeholder
         self.loadURLImageCallback = urlCallback
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return numberOfItemsCallback()
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! XSLPhotoBrowserNetWorkCell
         cell.reloadData(placeholder: placehodleImageCallback(indexPath.item), autoloadURLString: loadURLImageCallback(indexPath.item))
-//        cell.imageView.kf.setImage(with: URL(string: loadURLImageCallback(indexPath.item)!))
-//        cell.imageView.kf.setImage(with: URL(string: loadURLImageCallback(indexPath.item)!), placeholder: nil, options: KingfisherOptionsInfo?, progressBlock: , completionHandler: )
         return cell
     }
     
-    func registerCell(for collectionView: UICollectionView) {
+    public func registerCell(for collectionView: UICollectionView) {
         collectionView.register(XSLPhotoBrowserNetWorkCell.self, forCellWithReuseIdentifier: "XSLPhotoBrowserNetWorkCell")
     }
 

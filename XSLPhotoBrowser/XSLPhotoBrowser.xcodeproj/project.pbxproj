@@ -16,7 +16,6 @@
 		399A9E6921D722D300333466 /* XSLPhotoBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E6821D722D300333466 /* XSLPhotoBrowserUITests.swift */; };
 		399A9E9121D722FA00333466 /* XSLNetWorkImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7821D722FA00333466 /* XSLNetWorkImageDataSource.swift */; };
 		399A9E9221D722FA00333466 /* XSLLocalImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7921D722FA00333466 /* XSLLocalImageDataSource.swift */; };
-		399A9E9321D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7A21D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift */; };
 		399A9E9421D722FA00333466 /* XSLPhotoBrowserTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7C21D722FA00333466 /* XSLPhotoBrowserTransitioning.swift */; };
 		399A9E9521D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7D21D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift */; };
 		399A9E9621D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7E21D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift */; };
@@ -35,6 +34,7 @@
 		399A9EA321D722FA00333466 /* XSLBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8D21D722FA00333466 /* XSLBaseCollectionViewCell.swift */; };
 		399A9EA421D722FA00333466 /* XSLPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8E21D722FA00333466 /* XSLPhotoBrowser.swift */; };
 		399A9EA521D722FA00333466 /* XSLPhotoBrowserAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E9021D722FA00333466 /* XSLPhotoBrowserAssembler.swift */; };
+		39B1004F21D740D500E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7A21D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift */; };
 		60235DE3636146470772F955 /* Pods_XSLPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B123585982E97D5C89335 /* Pods_XSLPhotoBrowser.framework */; };
 		91F3FEB2327B7C4166349AF3 /* Pods_XSLPhotoBrowserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E9DC604526E42E4FF0AFAA /* Pods_XSLPhotoBrowserUITests.framework */; };
 		F015F9DDA3F4890A386F442C /* Pods_XSLPhotoBrowserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFE4AEB33EFB3FF4C0E13F2 /* Pods_XSLPhotoBrowserTests.framework */; };
@@ -198,15 +198,15 @@
 		399A9E7621D722FA00333466 /* 图片浏览器2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E7721D722FA00333466 /* DataSource */,
-				399A9E7B21D722FA00333466 /* 动画转场协议 */,
-				399A9E8021D722FA00333466 /* Animator */,
-				399A9E8621D722FA00333466 /* protocol */,
 				399A9E8A21D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift */,
 				399A9E8B21D722FA00333466 /* XSLPhotoBrowserDelegate.swift */,
 				399A9E8C21D722FA00333466 /* XSLPhotoBrowserProgressView.swift */,
 				399A9E8D21D722FA00333466 /* XSLBaseCollectionViewCell.swift */,
 				399A9E8E21D722FA00333466 /* XSLPhotoBrowser.swift */,
+				399A9E7721D722FA00333466 /* DataSource */,
+				399A9E7B21D722FA00333466 /* 动画转场协议 */,
+				399A9E8021D722FA00333466 /* Animator */,
+				399A9E8621D722FA00333466 /* protocol */,
 				399A9E8F21D722FA00333466 /* 装配器 */,
 			);
 			path = "图片浏览器2.0";
@@ -502,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B1004F21D740D500E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */,
 				399A9EA021D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift in Sources */,
 				399A9E9221D722FA00333466 /* XSLLocalImageDataSource.swift in Sources */,
 				399A9E4B21D722D100333466 /* ViewController.swift in Sources */,
@@ -515,7 +516,6 @@
 				399A9E9A21D722FA00333466 /* XSLPhotoFadePresentingAnimator.swift in Sources */,
 				399A9E9D21D722FA00333466 /* XSLKingFisherLoader.swift in Sources */,
 				399A9E9521D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift in Sources */,
-				399A9E9321D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift in Sources */,
 				399A9EA421D722FA00333466 /* XSLPhotoBrowser.swift in Sources */,
 				399A9E9821D722FA00333466 /* XSLPhotoBrowserZoomAnimator.swift in Sources */,
 				399A9E4921D722D100333466 /* AppDelegate.swift in Sources */,

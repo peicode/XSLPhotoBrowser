@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
+open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     /// 进度环
     public let progressView = XSLPhotoBrowserProgressView()
 
@@ -28,7 +28,7 @@ class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
         super.layoutSubviews()
         progressView.center = CGPoint(x: contentView.bounds.width / 2, y: contentView.bounds.height / 2)
     }
-    var photoLoader: XSLKingFisherLoader {
+    open var photoLoader: XSLKingFisherLoader {
         let loader = XSLKingFisherLoader()
         return loader
     }
