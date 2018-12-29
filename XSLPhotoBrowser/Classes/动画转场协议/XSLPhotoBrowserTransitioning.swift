@@ -10,9 +10,9 @@ import UIKit
 import Foundation
 
 open class XSLPhotoBrowserTransitioning: NSObject, XSLPhotoBrowserTransitioningDelegate {
-    weak var browser: XSLPhotoBrowser?
+    weak public var browser: XSLPhotoBrowser?
 
-    var maskAlpha: CGFloat {
+    public var maskAlpha: CGFloat {
         set {
             presentVC?.maskView.alpha = newValue
         }

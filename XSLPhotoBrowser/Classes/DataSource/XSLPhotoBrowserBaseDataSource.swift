@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 /// 数据源
-protocol XSLPhotoBrowserBaseDataSource: UICollectionViewDataSource {
+public protocol XSLPhotoBrowserBaseDataSource: UICollectionViewDataSource {
     var browser: XSLPhotoBrowser? { set get }
 
     func registerCell(for collectionView: UICollectionView)

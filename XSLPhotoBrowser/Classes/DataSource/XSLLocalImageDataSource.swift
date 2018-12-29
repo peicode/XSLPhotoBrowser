@@ -8,17 +8,17 @@
 
 import UIKit
 
-class XSLLocalImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
-    func registerCell(for collectionView: UICollectionView) {
+open class XSLLocalImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
+    public func registerCell(for collectionView: UICollectionView) {
         collectionView.register(XSLBaseCollectionViewCell.self, forCellWithReuseIdentifier: "XSLBaseCollectionViewCell")
     }
     
-    weak var browser: XSLPhotoBrowser?
+    weak public var browser: XSLPhotoBrowser?
     let cellID = "XSLBaseCollectionViewCell"
     //图片总数
-    var numberOfItemCounts: () -> Int
+    public var numberOfItemCounts: () -> Int
 
-    var localImageCallback: (Int) -> UIImage?
+    public var localImageCallback: (Int) -> UIImage?
 
     public init(numberOfItems: @escaping () -> Int, localImage: @escaping (Int) -> UIImage? ) {
         self.numberOfItemCounts = numberOfItems

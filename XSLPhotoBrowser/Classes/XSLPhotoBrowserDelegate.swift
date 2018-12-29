@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol XSLPhotoBrowserBaseDelegate: UICollectionViewDelegate {
+public protocol XSLPhotoBrowserBaseDelegate: UICollectionViewDelegate {
     var browser: XSLPhotoBrowser? {set get}
     /// pageIndex 值改变时回调
     func photoBrowser(_ browser: XSLPhotoBrowser, pageIndexDidChanged pageIndex: Int)
@@ -29,17 +29,17 @@ protocol XSLPhotoBrowserBaseDelegate: UICollectionViewDelegate {
     func photobrowser(_ browser: XSLPhotoBrowser, viewDidLoad animated: Bool)
 }
 
-class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
-    weak var browser: XSLPhotoBrowser?
+open class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
+    open weak var browser: XSLPhotoBrowser?
     /// cellisDrag
-    var cellIsDraging: (() -> Void)?
+    open var cellIsDraging: (() -> Void)?
     /// cellEndDrag
-    var cellEndDrag: (() -> Void)?
+    open var cellEndDrag: (() -> Void)?
     /// 长按回调。回传参数分别是：浏览器，图片序号，图片对象，手势对象
-    var longPressedCallback: ((XSLPhotoBrowser, Int, UIImage?, UILongPressGestureRecognizer) -> Void)?
+    open var longPressedCallback: ((XSLPhotoBrowser, Int, UIImage?, UILongPressGestureRecognizer) -> Void)?
     /// 图片的contentMode
-    var contentMode: UIView.ContentMode = .scaleToFill
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    open var contentMode: UIView.ContentMode = .scaleToFill
+    open func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let cell = cell as? XSLBaseCollectionViewCell else {
             return
         }
@@ -73,37 +73,37 @@ class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
         }
     }
     /// 退出
-    func dismiss() {
+    open func dismiss() {
         browser?.dismiss(animated: true, completion: nil)
     }
 
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         browser?.pageIndex = Int(scrollView.contentOffset.x / scrollView.bounds.width)
     }
 
-    func displayingContentView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView? {
+    open func displayingContentView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView? {
         let indexPath = IndexPath.init(item: pageIndex, section: 0)
         let cell = browser.collectionView.cellForItem(at: indexPath) as? XSLBaseCollectionViewCell
         return cell?.imageView
     }
 
-    func transitionZoomView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView? {
+    open func transitionZoomView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView? {
         let indexPath = IndexPath(item: pageIndex, section: 0)
         let cell = browser.collectionView.cellForItem(at: indexPath) as? XSLBaseCollectionViewCell
         return UIImageView(image: cell?.imageView.image)
     }
 
-    func dismissPhotoBrowser(_ browser: XSLPhotoBrowser) {
+    open func dismissPhotoBrowser(_ browser: XSLPhotoBrowser) {
         self.dismiss()
     }
 
-    func photobrowser(_ browser: XSLPhotoBrowser, viewDidLoad animated: Bool) {
+    open func photobrowser(_ browser: XSLPhotoBrowser, viewDidLoad animated: Bool) {
         
     }
-    func photoBrowserDidReloadData(_ browser: XSLPhotoBrowser) {
+    open func photoBrowserDidReloadData(_ browser: XSLPhotoBrowser) {
 
     }
-    func photoBrowser(_ browser: XSLPhotoBrowser, pageIndexDidChanged pageIndex: Int) {
+    open func photoBrowser(_ browser: XSLPhotoBrowser, pageIndexDidChanged pageIndex: Int) {
 
     }
 

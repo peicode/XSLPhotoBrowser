@@ -8,9 +8,9 @@
 
 import UIKit
 
-class XSLPhotoBrowser: UIViewController {
+open class XSLPhotoBrowser: UIViewController {
     /// 传入图片的index
-    var pageIndex: Int = 0 {
+    public var pageIndex: Int = 0 {
         didSet {
             if pageIndex != oldValue {
                 delegate.photoBrowser(self, pageIndexDidChanged: pageIndex)
@@ -18,11 +18,11 @@ class XSLPhotoBrowser: UIViewController {
         }
     }
     /// 图片之间的间隔
-    var photoSpacing: CGFloat = 30
+    public var photoSpacing: CGFloat = 30
     /// collectionView 数据源
-    var dataSource: XSLPhotoBrowserBaseDataSource
+    public var dataSource: XSLPhotoBrowserBaseDataSource
     /// collectionView 代理
-    var delegate: XSLPhotoBrowserBaseDelegate
+    public var delegate: XSLPhotoBrowserBaseDelegate
 
     ///
     var transDelegate: XSLPhotoBrowserTransitioningDelegate {
@@ -32,21 +32,21 @@ class XSLPhotoBrowser: UIViewController {
     }
 
     /// 返回正在执行转场动画的view
-    var transitionZoomView: UIView? {
+    public var transitionZoomView: UIView? {
         return delegate.transitionZoomView(self, pageIndex: pageIndex)
     }
     /// 返回对应collectionViewCell的image
-    var imageForCollectionViewCell: UIView? {
+    public var imageForCollectionViewCell: UIView? {
         return delegate.displayingContentView(self, pageIndex: pageIndex)
     }
-    lazy var flowLayout: UICollectionViewFlowLayout = {
+    public lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = photoSpacing
         layout.itemSize = view.bounds.size
         return layout
     }()
-    lazy var collectionView: UICollectionView = {
+    public lazy var collectionView: UICollectionView = {
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionV.backgroundColor = UIColor.clear
         collectionV.showsVerticalScrollIndicator = false
@@ -57,12 +57,12 @@ class XSLPhotoBrowser: UIViewController {
         collectionV.dataSource = dataSource
         collectionV.frame = view.bounds
         collectionV.frame.size.width = view.bounds.width + photoSpacing
-        collectionV.contentInset = UIEdgeInsetsMake(0, 0, 0, photoSpacing)
+        collectionV.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: photoSpacing)
 //        collectionV.register(XSLBaseCollectionViewCell.self, forCellWithReuseIdentifier: "XSLBaseCollectionViewCell")
         return collectionV
     }()
 
-    init(pageIndex: Int, dataSource: XSLPhotoBrowserBaseDataSource, deledate: XSLPhotoBrowserBaseDelegate = XSLPhotoBrowserDelegate(), transDelegate: XSLPhotoBrowserTransitioningDelegate = XSLPhotoBrowserFadeTransitioning()) {
+    public init(pageIndex: Int, dataSource: XSLPhotoBrowserBaseDataSource, deledate: XSLPhotoBrowserBaseDelegate = XSLPhotoBrowserDelegate(), transDelegate: XSLPhotoBrowserTransitioningDelegate = XSLPhotoBrowserFadeTransitioning()) {
         self.pageIndex = pageIndex
         self.dataSource = dataSource
         self.delegate = deledate
@@ -77,11 +77,11 @@ class XSLPhotoBrowser: UIViewController {
         transDelegate.browser = self
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(collectionView)
         if #available(iOS 11.0, *) {
@@ -96,13 +96,13 @@ class XSLPhotoBrowser: UIViewController {
         collectionView.layoutIfNeeded()
     }
 
-    override var shouldAutorotate: Bool {
+    override open var shouldAutorotate: Bool {
         return true
     }
 
     /// 滑到哪张图片
     /// - parameter index: 图片序号，从0开始
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         // 记录旋转前index
         let index = pageIndex
         DispatchQueue.main.asyncAfter(deadline: .now() + coordinator.transitionDuration, execute: {
@@ -110,7 +110,7 @@ class XSLPhotoBrowser: UIViewController {
         })
     }
 
-    func scrollToItem(index: Int, at position: UICollectionView.ScrollPosition, animation: Bool) {
+    open func scrollToItem(index: Int, at position: UICollectionView.ScrollPosition, animation: Bool) {
         var safeIndex = max(0, index)
         safeIndex = min(itemsCount - 1, safeIndex)
         let indexPath = IndexPath(item: safeIndex, section: 0)
@@ -131,7 +131,7 @@ class XSLPhotoBrowser: UIViewController {
         collectionView.reloadData()
         delegate.photoBrowserDidReloadData(self)
     }
-    override func viewDidAppear(_ animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         delegate.photobrowser(self, viewDidLoad: animated)
     }

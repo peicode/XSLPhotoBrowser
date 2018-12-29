@@ -9,57 +9,6 @@
 import UIKit
 
 class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
-//    var originView: UIView
-//    var originViewFrame: CGRect
-//    public init(transView: UIView) {
-//        originView = transView
-//        originViewFrame = transView.frame
-//        super.init()
-//        setupPresent()
-//        setupDisMiss()
-//
-//    }
-//
-//    func setupPresent() {
-//        self.presentingAnimator = XSLPhotoBrowserZoomPresentingAnimator(zoomView: { () -> UIView? in
-//            let view = self.browser?.transitionZoomView
-//            view?.contentMode = .scaleAspectFill
-//            view?.clipsToBounds = true
-////            return view
-//            return self.originView
-//        }, startFrame: { (view) -> CGRect? in
-//            //得到CollectionView开始时的cell的Frame
-//            return self.originView.convert(self.originView.bounds, to: view)
-//        }, endFrame: { (view) -> CGRect? in
-////            let tmpView = self.browser?.transitionZoomView
-//            let tmpView = self.browser?.imageForCollectionViewCell
-//            return tmpView?.convert((tmpView?.bounds)!, to: view)
-////            let imageW = self.originView.bounds.width
-////            let y = (UIScreen.main.bounds.height - imageW * UIScreen.main.scale) * 0.5
-////            return CGRect(x: 0, y: y, width: UIScreen.main.bounds.width, height: imageW * UIScreen.main.scale)
-////            return nil
-//        })
-//    }
-//
-//    func setupDisMiss() {
-//        self.dismissAnimator = XSLPhotoBrowserZoomDismissingAnimator(zoomView: { [weak self]() -> UIView? in
-//            guard let strongSelf = self else {
-//                return nil
-//            }
-//            let view = strongSelf.browser?.transitionZoomView
-//            view?.contentMode = .scaleAspectFill
-//            return view
-//        }, startFrame: { (view) -> CGRect? in
-//            if let tmpView = self.browser?.imageForCollectionViewCell {
-//                return tmpView.convert(tmpView.bounds, to: view)
-//            }
-//            return nil
-//        }, endFrame: { (view) -> CGRect? in
-//            return self.originView.convert(self.originView.bounds, to: view)
-//        })
-//    }
-
-    /////////
     /// present转场时，内容缩张模式
     public var presentingZoomViewMode: () -> UIView.ContentMode = {
         return UIView.ContentMode.scaleAspectFill

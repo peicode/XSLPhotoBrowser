@@ -8,9 +8,9 @@
 
 import UIKit
 
-class XSLPhotoBrowserProgressView: UIView {
+open class XSLPhotoBrowserProgressView: UIView {
 
-    var progress: CGFloat = 0 {
+    open var progress: CGFloat = 0 {
         didSet {
             if progress < 0.05 {
                 progress = 0.05
@@ -20,9 +20,9 @@ class XSLPhotoBrowserProgressView: UIView {
 
     }
 
-    var circleLayer: CAShapeLayer!
-    var annulusLayer: CAShapeLayer!
-    override init(frame: CGRect) {
+    open var circleLayer: CAShapeLayer!
+    open var annulusLayer: CAShapeLayer!
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
         progress = 0
@@ -44,14 +44,14 @@ class XSLPhotoBrowserProgressView: UIView {
         layer.addSublayer(annulusLayer)
     }
 
-    func makeCirclePath() -> CGPath {
+    open func makeCirclePath() -> CGPath {
         let center = CGPoint(x: bounds.midX, y: bounds.maxY)
         let path = UIBezierPath(arcCenter: center, radius: 30, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
         path.lineWidth = 1
         return path.cgPath
     }
 
-    func makeProgressPath(progress: CGFloat) -> CGPath {
+    open func makeProgressPath(progress: CGFloat) -> CGPath {
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         let radius = bounds.midY - 2
         let path = UIBezierPath()
@@ -63,7 +63,7 @@ class XSLPhotoBrowserProgressView: UIView {
         return path.cgPath
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

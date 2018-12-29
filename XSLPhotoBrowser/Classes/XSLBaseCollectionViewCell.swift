@@ -8,25 +8,25 @@
 
 import UIKit
 
-class XSLBaseCollectionViewCell: UICollectionViewCell {
+open class XSLBaseCollectionViewCell: UICollectionViewCell {
     /// imageView
-    lazy var imageView = UIImageView()
+    open lazy var imageView = UIImageView()
     /// ScrollView
-    lazy var imageContainer = UIScrollView()
+    open lazy var imageContainer = UIScrollView()
 
     /// 图片单击时的回调
-    var clickCallback: (() -> Void)?
+    open var clickCallback: (() -> Void)?
 
     /// 图片拖动时回调
-    var panChangedCallback: ((_ scale: CGFloat) -> Void)?
+    open var panChangedCallback: ((_ scale: CGFloat) -> Void)?
 
     /// 图片拖动松手回调。isDown: 是否向下
-    var panReleasedCallback: ((_ isDown: Bool) -> Void)?
+    open var panReleasedCallback: ((_ isDown: Bool) -> Void)?
 
     ///
-    var longPressCallback: ((_ longGesture: UILongPressGestureRecognizer) -> Void)?
+    open var longPressCallback: ((_ longGesture: UILongPressGestureRecognizer) -> Void)?
     /// 是否需要添加长按手势。子类可重写本属性，返回`false`即可避免添加长按手势
-    var isNeededLongPressGesture: Bool {
+    open var isNeededLongPressGesture: Bool {
         return true
     }
 
@@ -90,10 +90,10 @@ class XSLBaseCollectionViewCell: UICollectionViewCell {
         }
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         imageContainer.frame = contentView.bounds
         imageContainer.setZoomScale(1.0, animated: false)
@@ -101,7 +101,7 @@ class XSLBaseCollectionViewCell: UICollectionViewCell {
         imageContainer.setZoomScale(1.0, animated: false)
 //        imageView.center = CGPoint(x: imageContainer.bounds.width / 2, y: imageContainer.bounds.height / 2)
     }
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imageContainer)
         imageContainer.maximumZoomScale = 2.0
@@ -136,7 +136,7 @@ class XSLBaseCollectionViewCell: UICollectionViewCell {
 //MARK: -UIScrollViewDelegate
 extension XSLBaseCollectionViewCell: UIScrollViewDelegate {
     //将要缩放的UIView对象
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+    open func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
     /// 需要在缩放的时候调用
@@ -224,7 +224,7 @@ extension XSLBaseCollectionViewCell {
 }
 // MARK: - UIGestureRecognizerDelegate
 extension XSLBaseCollectionViewCell: UIGestureRecognizerDelegate {
-    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    override open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         guard let pan = gestureRecognizer as? UIPanGestureRecognizer else{
             return true
         }

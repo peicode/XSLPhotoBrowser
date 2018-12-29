@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol XSLPhotoBrowserTransitioningDelegate: UIViewControllerTransitioningDelegate {
+public protocol XSLPhotoBrowserTransitioningDelegate: UIViewControllerTransitioningDelegate {
     /// 实现者应弱引用 PhotoBrowser，由 PhotoBrowser 初始化完毕后注入
     var browser: XSLPhotoBrowser? { set get }
 
