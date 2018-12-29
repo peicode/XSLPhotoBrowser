@@ -14,27 +14,27 @@
 		399A9E5321D722D300333466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399A9E5121D722D300333466 /* LaunchScreen.storyboard */; };
 		399A9E5E21D722D300333466 /* XSLPhotoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E5D21D722D300333466 /* XSLPhotoBrowserTests.swift */; };
 		399A9E6921D722D300333466 /* XSLPhotoBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E6821D722D300333466 /* XSLPhotoBrowserUITests.swift */; };
-		399A9E9121D722FA00333466 /* XSLNetWorkImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7821D722FA00333466 /* XSLNetWorkImageDataSource.swift */; };
-		399A9E9221D722FA00333466 /* XSLLocalImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7921D722FA00333466 /* XSLLocalImageDataSource.swift */; };
-		399A9E9421D722FA00333466 /* XSLPhotoBrowserTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7C21D722FA00333466 /* XSLPhotoBrowserTransitioning.swift */; };
-		399A9E9521D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7D21D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift */; };
-		399A9E9621D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7E21D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift */; };
-		399A9E9721D722FA00333466 /* XSLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7F21D722FA00333466 /* XSLPresentationController.swift */; };
-		399A9E9821D722FA00333466 /* XSLPhotoBrowserZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8121D722FA00333466 /* XSLPhotoBrowserZoomAnimator.swift */; };
-		399A9E9921D722FA00333466 /* XSLPhotoFadeDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8221D722FA00333466 /* XSLPhotoFadeDismissingAnimator.swift */; };
-		399A9E9A21D722FA00333466 /* XSLPhotoFadePresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8321D722FA00333466 /* XSLPhotoFadePresentingAnimator.swift */; };
-		399A9E9B21D722FA00333466 /* XSLPhotoBrowserZoomDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8421D722FA00333466 /* XSLPhotoBrowserZoomDismissingAnimator.swift */; };
-		399A9E9C21D722FA00333466 /* XSLPhotoBrowserZoomPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8521D722FA00333466 /* XSLPhotoBrowserZoomPresentingAnimator.swift */; };
-		399A9E9D21D722FA00333466 /* XSLKingFisherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8721D722FA00333466 /* XSLKingFisherLoader.swift */; };
-		399A9E9E21D722FA00333466 /* XSLPhotoBrowserTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8821D722FA00333466 /* XSLPhotoBrowserTransitioningDelegate.swift */; };
-		399A9E9F21D722FA00333466 /* XSLPhotoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8921D722FA00333466 /* XSLPhotoLoader.swift */; };
-		399A9EA021D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8A21D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift */; };
-		399A9EA121D722FA00333466 /* XSLPhotoBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8B21D722FA00333466 /* XSLPhotoBrowserDelegate.swift */; };
-		399A9EA221D722FA00333466 /* XSLPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8C21D722FA00333466 /* XSLPhotoBrowserProgressView.swift */; };
-		399A9EA321D722FA00333466 /* XSLBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8D21D722FA00333466 /* XSLBaseCollectionViewCell.swift */; };
-		399A9EA421D722FA00333466 /* XSLPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E8E21D722FA00333466 /* XSLPhotoBrowser.swift */; };
-		399A9EA521D722FA00333466 /* XSLPhotoBrowserAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E9021D722FA00333466 /* XSLPhotoBrowserAssembler.swift */; };
-		39B1004F21D740D500E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E7A21D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift */; };
+		39B1006B21D757FB00E234DF /* XSLNetWorkImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005221D757FB00E234DF /* XSLNetWorkImageDataSource.swift */; };
+		39B1006C21D757FB00E234DF /* XSLLocalImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005321D757FB00E234DF /* XSLLocalImageDataSource.swift */; };
+		39B1006D21D757FB00E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005421D757FB00E234DF /* XSLPhotoBrowserBaseDataSource.swift */; };
+		39B1006E21D757FB00E234DF /* XSLPhotoBrowserTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005621D757FB00E234DF /* XSLPhotoBrowserTransitioning.swift */; };
+		39B1006F21D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005721D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift */; };
+		39B1007021D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005821D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift */; };
+		39B1007121D757FB00E234DF /* XSLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005921D757FB00E234DF /* XSLPresentationController.swift */; };
+		39B1007221D757FB00E234DF /* XSLPhotoBrowserZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005B21D757FB00E234DF /* XSLPhotoBrowserZoomAnimator.swift */; };
+		39B1007321D757FB00E234DF /* XSLPhotoFadeDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005C21D757FB00E234DF /* XSLPhotoFadeDismissingAnimator.swift */; };
+		39B1007421D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005D21D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift */; };
+		39B1007521D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005E21D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift */; };
+		39B1007621D757FB00E234DF /* XSLPhotoBrowserZoomPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005F21D757FB00E234DF /* XSLPhotoBrowserZoomPresentingAnimator.swift */; };
+		39B1007721D757FB00E234DF /* XSLKingFisherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */; };
+		39B1007821D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006221D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift */; };
+		39B1007921D757FB00E234DF /* XSLPhotoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006321D757FB00E234DF /* XSLPhotoLoader.swift */; };
+		39B1007A21D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006421D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift */; };
+		39B1007B21D757FB00E234DF /* XSLPhotoBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006521D757FB00E234DF /* XSLPhotoBrowserDelegate.swift */; };
+		39B1007C21D757FB00E234DF /* XSLPhotoBrowserProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006621D757FB00E234DF /* XSLPhotoBrowserProgressView.swift */; };
+		39B1007D21D757FB00E234DF /* XSLBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006721D757FB00E234DF /* XSLBaseCollectionViewCell.swift */; };
+		39B1007E21D757FB00E234DF /* XSLPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006821D757FB00E234DF /* XSLPhotoBrowser.swift */; };
+		39B1007F21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006A21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift */; };
 		60235DE3636146470772F955 /* Pods_XSLPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B123585982E97D5C89335 /* Pods_XSLPhotoBrowser.framework */; };
 		91F3FEB2327B7C4166349AF3 /* Pods_XSLPhotoBrowserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E9DC604526E42E4FF0AFAA /* Pods_XSLPhotoBrowserUITests.framework */; };
 		F015F9DDA3F4890A386F442C /* Pods_XSLPhotoBrowserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFE4AEB33EFB3FF4C0E13F2 /* Pods_XSLPhotoBrowserTests.framework */; };
@@ -73,27 +73,27 @@
 		399A9E6421D722D300333466 /* XSLPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XSLPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399A9E6821D722D300333466 /* XSLPhotoBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserUITests.swift; sourceTree = "<group>"; };
 		399A9E6A21D722D300333466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		399A9E7821D722FA00333466 /* XSLNetWorkImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLNetWorkImageDataSource.swift; sourceTree = "<group>"; };
-		399A9E7921D722FA00333466 /* XSLLocalImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLLocalImageDataSource.swift; sourceTree = "<group>"; };
-		399A9E7A21D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserBaseDataSource.swift; sourceTree = "<group>"; };
-		399A9E7C21D722FA00333466 /* XSLPhotoBrowserTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserTransitioning.swift; sourceTree = "<group>"; };
-		399A9E7D21D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomtransitioning.swift; sourceTree = "<group>"; };
-		399A9E7E21D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserFadeTransitioning.swift; sourceTree = "<group>"; };
-		399A9E7F21D722FA00333466 /* XSLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPresentationController.swift; sourceTree = "<group>"; };
-		399A9E8121D722FA00333466 /* XSLPhotoBrowserZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomAnimator.swift; sourceTree = "<group>"; };
-		399A9E8221D722FA00333466 /* XSLPhotoFadeDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoFadeDismissingAnimator.swift; sourceTree = "<group>"; };
-		399A9E8321D722FA00333466 /* XSLPhotoFadePresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoFadePresentingAnimator.swift; sourceTree = "<group>"; };
-		399A9E8421D722FA00333466 /* XSLPhotoBrowserZoomDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomDismissingAnimator.swift; sourceTree = "<group>"; };
-		399A9E8521D722FA00333466 /* XSLPhotoBrowserZoomPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomPresentingAnimator.swift; sourceTree = "<group>"; };
-		399A9E8721D722FA00333466 /* XSLKingFisherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLKingFisherLoader.swift; sourceTree = "<group>"; };
-		399A9E8821D722FA00333466 /* XSLPhotoBrowserTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserTransitioningDelegate.swift; sourceTree = "<group>"; };
-		399A9E8921D722FA00333466 /* XSLPhotoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoLoader.swift; sourceTree = "<group>"; };
-		399A9E8A21D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserNetWorkCell.swift; sourceTree = "<group>"; };
-		399A9E8B21D722FA00333466 /* XSLPhotoBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserDelegate.swift; sourceTree = "<group>"; };
-		399A9E8C21D722FA00333466 /* XSLPhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserProgressView.swift; sourceTree = "<group>"; };
-		399A9E8D21D722FA00333466 /* XSLBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLBaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		399A9E8E21D722FA00333466 /* XSLPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowser.swift; sourceTree = "<group>"; };
-		399A9E9021D722FA00333466 /* XSLPhotoBrowserAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserAssembler.swift; sourceTree = "<group>"; };
+		39B1005221D757FB00E234DF /* XSLNetWorkImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLNetWorkImageDataSource.swift; sourceTree = "<group>"; };
+		39B1005321D757FB00E234DF /* XSLLocalImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLLocalImageDataSource.swift; sourceTree = "<group>"; };
+		39B1005421D757FB00E234DF /* XSLPhotoBrowserBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserBaseDataSource.swift; sourceTree = "<group>"; };
+		39B1005621D757FB00E234DF /* XSLPhotoBrowserTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserTransitioning.swift; sourceTree = "<group>"; };
+		39B1005721D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomtransitioning.swift; sourceTree = "<group>"; };
+		39B1005821D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserFadeTransitioning.swift; sourceTree = "<group>"; };
+		39B1005921D757FB00E234DF /* XSLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPresentationController.swift; sourceTree = "<group>"; };
+		39B1005B21D757FB00E234DF /* XSLPhotoBrowserZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomAnimator.swift; sourceTree = "<group>"; };
+		39B1005C21D757FB00E234DF /* XSLPhotoFadeDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoFadeDismissingAnimator.swift; sourceTree = "<group>"; };
+		39B1005D21D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoFadePresentingAnimator.swift; sourceTree = "<group>"; };
+		39B1005E21D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomDismissingAnimator.swift; sourceTree = "<group>"; };
+		39B1005F21D757FB00E234DF /* XSLPhotoBrowserZoomPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomPresentingAnimator.swift; sourceTree = "<group>"; };
+		39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLKingFisherLoader.swift; sourceTree = "<group>"; };
+		39B1006221D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserTransitioningDelegate.swift; sourceTree = "<group>"; };
+		39B1006321D757FB00E234DF /* XSLPhotoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoLoader.swift; sourceTree = "<group>"; };
+		39B1006421D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserNetWorkCell.swift; sourceTree = "<group>"; };
+		39B1006521D757FB00E234DF /* XSLPhotoBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserDelegate.swift; sourceTree = "<group>"; };
+		39B1006621D757FB00E234DF /* XSLPhotoBrowserProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserProgressView.swift; sourceTree = "<group>"; };
+		39B1006721D757FB00E234DF /* XSLBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		39B1006821D757FB00E234DF /* XSLPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowser.swift; sourceTree = "<group>"; };
+		39B1006A21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserAssembler.swift; sourceTree = "<group>"; };
 		4C0900D13B5DCF5D1F0D65FD /* Pods-XSLPhotoBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSLPhotoBrowserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSLPhotoBrowserUITests/Pods-XSLPhotoBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C03D78B0C09261F5DD99600 /* Pods-XSLPhotoBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSLPhotoBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSLPhotoBrowserTests/Pods-XSLPhotoBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
 		8DFE4AEB33EFB3FF4C0E13F2 /* Pods_XSLPhotoBrowserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSLPhotoBrowserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 		399A9E4721D722D100333466 /* XSLPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E7621D722FA00333466 /* 图片浏览器2.0 */,
+				39B1005021D757FB00E234DF /* Classes */,
 				399A9E4821D722D100333466 /* AppDelegate.swift */,
 				399A9E4A21D722D100333466 /* ViewController.swift */,
 				399A9E4C21D722D100333466 /* Main.storyboard */,
@@ -195,70 +195,70 @@
 			path = XSLPhotoBrowserUITests;
 			sourceTree = "<group>";
 		};
-		399A9E7621D722FA00333466 /* 图片浏览器2.0 */ = {
+		39B1005021D757FB00E234DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E8A21D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift */,
-				399A9E8B21D722FA00333466 /* XSLPhotoBrowserDelegate.swift */,
-				399A9E8C21D722FA00333466 /* XSLPhotoBrowserProgressView.swift */,
-				399A9E8D21D722FA00333466 /* XSLBaseCollectionViewCell.swift */,
-				399A9E8E21D722FA00333466 /* XSLPhotoBrowser.swift */,
-				399A9E7721D722FA00333466 /* DataSource */,
-				399A9E7B21D722FA00333466 /* 动画转场协议 */,
-				399A9E8021D722FA00333466 /* Animator */,
-				399A9E8621D722FA00333466 /* protocol */,
-				399A9E8F21D722FA00333466 /* 装配器 */,
+				39B1005121D757FB00E234DF /* DataSource */,
+				39B1005521D757FB00E234DF /* 动画转场协议 */,
+				39B1005A21D757FB00E234DF /* Animator */,
+				39B1006021D757FB00E234DF /* protocol */,
+				39B1006421D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift */,
+				39B1006521D757FB00E234DF /* XSLPhotoBrowserDelegate.swift */,
+				39B1006621D757FB00E234DF /* XSLPhotoBrowserProgressView.swift */,
+				39B1006721D757FB00E234DF /* XSLBaseCollectionViewCell.swift */,
+				39B1006821D757FB00E234DF /* XSLPhotoBrowser.swift */,
+				39B1006921D757FB00E234DF /* 装配器 */,
 			);
-			path = "图片浏览器2.0";
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		399A9E7721D722FA00333466 /* DataSource */ = {
+		39B1005121D757FB00E234DF /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E7821D722FA00333466 /* XSLNetWorkImageDataSource.swift */,
-				399A9E7921D722FA00333466 /* XSLLocalImageDataSource.swift */,
-				399A9E7A21D722FA00333466 /* XSLPhotoBrowserBaseDataSource.swift */,
+				39B1005221D757FB00E234DF /* XSLNetWorkImageDataSource.swift */,
+				39B1005321D757FB00E234DF /* XSLLocalImageDataSource.swift */,
+				39B1005421D757FB00E234DF /* XSLPhotoBrowserBaseDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
 		};
-		399A9E7B21D722FA00333466 /* 动画转场协议 */ = {
+		39B1005521D757FB00E234DF /* 动画转场协议 */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E7C21D722FA00333466 /* XSLPhotoBrowserTransitioning.swift */,
-				399A9E7D21D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift */,
-				399A9E7E21D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift */,
-				399A9E7F21D722FA00333466 /* XSLPresentationController.swift */,
+				39B1005621D757FB00E234DF /* XSLPhotoBrowserTransitioning.swift */,
+				39B1005721D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift */,
+				39B1005821D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift */,
+				39B1005921D757FB00E234DF /* XSLPresentationController.swift */,
 			);
 			path = "动画转场协议";
 			sourceTree = "<group>";
 		};
-		399A9E8021D722FA00333466 /* Animator */ = {
+		39B1005A21D757FB00E234DF /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E8121D722FA00333466 /* XSLPhotoBrowserZoomAnimator.swift */,
-				399A9E8221D722FA00333466 /* XSLPhotoFadeDismissingAnimator.swift */,
-				399A9E8321D722FA00333466 /* XSLPhotoFadePresentingAnimator.swift */,
-				399A9E8421D722FA00333466 /* XSLPhotoBrowserZoomDismissingAnimator.swift */,
-				399A9E8521D722FA00333466 /* XSLPhotoBrowserZoomPresentingAnimator.swift */,
+				39B1005B21D757FB00E234DF /* XSLPhotoBrowserZoomAnimator.swift */,
+				39B1005C21D757FB00E234DF /* XSLPhotoFadeDismissingAnimator.swift */,
+				39B1005D21D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift */,
+				39B1005E21D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift */,
+				39B1005F21D757FB00E234DF /* XSLPhotoBrowserZoomPresentingAnimator.swift */,
 			);
 			path = Animator;
 			sourceTree = "<group>";
 		};
-		399A9E8621D722FA00333466 /* protocol */ = {
+		39B1006021D757FB00E234DF /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E8721D722FA00333466 /* XSLKingFisherLoader.swift */,
-				399A9E8821D722FA00333466 /* XSLPhotoBrowserTransitioningDelegate.swift */,
-				399A9E8921D722FA00333466 /* XSLPhotoLoader.swift */,
+				39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */,
+				39B1006221D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift */,
+				39B1006321D757FB00E234DF /* XSLPhotoLoader.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
 		};
-		399A9E8F21D722FA00333466 /* 装配器 */ = {
+		39B1006921D757FB00E234DF /* 装配器 */ = {
 			isa = PBXGroup;
 			children = (
-				399A9E9021D722FA00333466 /* XSLPhotoBrowserAssembler.swift */,
+				39B1006A21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift */,
 			);
 			path = "装配器";
 			sourceTree = "<group>";
@@ -502,29 +502,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39B1004F21D740D500E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */,
-				399A9EA021D722FA00333466 /* XSLPhotoBrowserNetWorkCell.swift in Sources */,
-				399A9E9221D722FA00333466 /* XSLLocalImageDataSource.swift in Sources */,
+				39B1007A21D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift in Sources */,
+				39B1006C21D757FB00E234DF /* XSLLocalImageDataSource.swift in Sources */,
 				399A9E4B21D722D100333466 /* ViewController.swift in Sources */,
-				399A9E9121D722FA00333466 /* XSLNetWorkImageDataSource.swift in Sources */,
-				399A9E9921D722FA00333466 /* XSLPhotoFadeDismissingAnimator.swift in Sources */,
-				399A9E9C21D722FA00333466 /* XSLPhotoBrowserZoomPresentingAnimator.swift in Sources */,
-				399A9E9421D722FA00333466 /* XSLPhotoBrowserTransitioning.swift in Sources */,
-				399A9EA521D722FA00333466 /* XSLPhotoBrowserAssembler.swift in Sources */,
-				399A9EA221D722FA00333466 /* XSLPhotoBrowserProgressView.swift in Sources */,
-				399A9E9721D722FA00333466 /* XSLPresentationController.swift in Sources */,
-				399A9E9A21D722FA00333466 /* XSLPhotoFadePresentingAnimator.swift in Sources */,
-				399A9E9D21D722FA00333466 /* XSLKingFisherLoader.swift in Sources */,
-				399A9E9521D722FA00333466 /* XSLPhotoBrowserZoomtransitioning.swift in Sources */,
-				399A9EA421D722FA00333466 /* XSLPhotoBrowser.swift in Sources */,
-				399A9E9821D722FA00333466 /* XSLPhotoBrowserZoomAnimator.swift in Sources */,
+				39B1006B21D757FB00E234DF /* XSLNetWorkImageDataSource.swift in Sources */,
+				39B1007321D757FB00E234DF /* XSLPhotoFadeDismissingAnimator.swift in Sources */,
+				39B1007621D757FB00E234DF /* XSLPhotoBrowserZoomPresentingAnimator.swift in Sources */,
+				39B1006E21D757FB00E234DF /* XSLPhotoBrowserTransitioning.swift in Sources */,
+				39B1007F21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift in Sources */,
+				39B1007C21D757FB00E234DF /* XSLPhotoBrowserProgressView.swift in Sources */,
+				39B1007121D757FB00E234DF /* XSLPresentationController.swift in Sources */,
+				39B1007421D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift in Sources */,
+				39B1007721D757FB00E234DF /* XSLKingFisherLoader.swift in Sources */,
+				39B1006F21D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift in Sources */,
+				39B1006D21D757FB00E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */,
+				39B1007E21D757FB00E234DF /* XSLPhotoBrowser.swift in Sources */,
+				39B1007221D757FB00E234DF /* XSLPhotoBrowserZoomAnimator.swift in Sources */,
 				399A9E4921D722D100333466 /* AppDelegate.swift in Sources */,
-				399A9EA321D722FA00333466 /* XSLBaseCollectionViewCell.swift in Sources */,
-				399A9E9621D722FA00333466 /* XSLPhotoBrowserFadeTransitioning.swift in Sources */,
-				399A9E9F21D722FA00333466 /* XSLPhotoLoader.swift in Sources */,
-				399A9EA121D722FA00333466 /* XSLPhotoBrowserDelegate.swift in Sources */,
-				399A9E9E21D722FA00333466 /* XSLPhotoBrowserTransitioningDelegate.swift in Sources */,
-				399A9E9B21D722FA00333466 /* XSLPhotoBrowserZoomDismissingAnimator.swift in Sources */,
+				39B1007D21D757FB00E234DF /* XSLBaseCollectionViewCell.swift in Sources */,
+				39B1007021D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift in Sources */,
+				39B1007921D757FB00E234DF /* XSLPhotoLoader.swift in Sources */,
+				39B1007B21D757FB00E234DF /* XSLPhotoBrowserDelegate.swift in Sources */,
+				39B1007821D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift in Sources */,
+				39B1007521D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
