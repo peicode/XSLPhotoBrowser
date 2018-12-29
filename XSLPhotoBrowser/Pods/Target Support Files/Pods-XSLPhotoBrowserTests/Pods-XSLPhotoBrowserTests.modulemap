@@ -1,0 +1,6 @@
+framework module Pods_XSLPhotoBrowserTests {
+  umbrella header "Pods-XSLPhotoBrowserTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
