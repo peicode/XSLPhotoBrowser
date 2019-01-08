@@ -201,7 +201,7 @@
 				39B1005121D757FB00E234DF /* DataSource */,
 				39B1005521D757FB00E234DF /* 动画转场协议 */,
 				39B1005A21D757FB00E234DF /* Animator */,
-				39B1006021D757FB00E234DF /* protocol */,
+				39B1006021D757FB00E234DF /* 图片加载 */,
 				39B1006421D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift */,
 				39B1006521D757FB00E234DF /* XSLPhotoBrowserDelegate.swift */,
 				39B1006621D757FB00E234DF /* XSLPhotoBrowserProgressView.swift */,
@@ -225,6 +225,7 @@
 		39B1005521D757FB00E234DF /* 动画转场协议 */ = {
 			isa = PBXGroup;
 			children = (
+				39B1006221D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift */,
 				39B1005621D757FB00E234DF /* XSLPhotoBrowserTransitioning.swift */,
 				39B1005721D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift */,
 				39B1005821D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift */,
@@ -245,14 +246,13 @@
 			path = Animator;
 			sourceTree = "<group>";
 		};
-		39B1006021D757FB00E234DF /* protocol */ = {
+		39B1006021D757FB00E234DF /* 图片加载 */ = {
 			isa = PBXGroup;
 			children = (
 				39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */,
-				39B1006221D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift */,
 				39B1006321D757FB00E234DF /* XSLPhotoLoader.swift */,
 			);
-			path = protocol;
+			path = "图片加载";
 			sourceTree = "<group>";
 		};
 		39B1006921D757FB00E234DF /* 装配器 */ = {
