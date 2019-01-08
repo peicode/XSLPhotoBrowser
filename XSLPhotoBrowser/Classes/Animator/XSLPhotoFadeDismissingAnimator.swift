@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-open public class XSLPhotoFadeDismissingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+public class XSLPhotoFadeDismissingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.25
     }

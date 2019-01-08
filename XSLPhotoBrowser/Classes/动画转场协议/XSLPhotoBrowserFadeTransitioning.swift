@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-open public class XSLPhotoBrowserFadeTransitioning: XSLPhotoBrowserTransitioning {
+public class XSLPhotoBrowserFadeTransitioning: XSLPhotoBrowserTransitioning {
     public override init() {
         super.init()
         self.presentingAnimator = XSLPhotoFadePresentingAnimator()
