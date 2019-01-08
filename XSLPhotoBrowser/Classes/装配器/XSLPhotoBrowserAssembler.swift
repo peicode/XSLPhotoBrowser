@@ -8,9 +8,9 @@
 
 import UIKit
 
-class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
+open class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
 
-    lazy var offsetX: CGFloat = {
+    open lazy var offsetX: CGFloat = {
         if #available(iOS 11.0, *), let window = UIApplication.shared.keyWindow {
             guard let areaBottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom else {
                 return 0
@@ -19,7 +19,7 @@ class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
         }
         return 0
     }()
-    func SafeTop(y: CGFloat) -> CGFloat {
+    open func SafeTop(y: CGFloat) -> CGFloat {
         if #available(iOS 11.0, *) {
             guard let areaTop = UIApplication.shared.keyWindow?.safeAreaInsets.top else {
                 return y
@@ -29,7 +29,7 @@ class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
         return y
     }
 
-    lazy var offsetY: CGFloat = {
+    open lazy var offsetY: CGFloat = {
         if #available(iOS 11.0, *) {
             guard let areaBottom = UIApplication.shared.keyWindow?.safeAreaInsets.bottom else {
                 return 0
@@ -39,12 +39,12 @@ class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
         return 0
     }()
     /// quitBtnCallback
-    var quitBtnCallback: ((XSLPhotoBrowserAssembler) -> Void)?
+    open var quitBtnCallback: ((XSLPhotoBrowserAssembler) -> Void)?
     /// deleteBtnCallback
-    var deleteBtnCallback: ((_ index: Int) -> Void)?
+    open var deleteBtnCallback: ((_ index: Int) -> Void)?
 
     /// 
-    lazy var headerView: UIView = {
+    open lazy var headerView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: SafeTop(y: 0), width: UIScreen.main.bounds.width, height: 44))
         view.layer.shadowColor = UIColor.white.cgColor
         let quitBtn = UIButton()
@@ -61,7 +61,7 @@ class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
         return view
     }()
 
-    lazy var bottomView: UIView = {
+    open lazy var bottomView: UIView = {
         let heigt: CGFloat = 44.0
         let y = UIScreen.main.bounds.height - heigt - offsetY
         let view = UIView(frame: CGRect(x: 0, y: y, width: UIScreen.main.bounds.width, height: 44))
@@ -82,24 +82,24 @@ class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
         return view
     }()
 
-    override func photobrowser(_ browser: XSLPhotoBrowser, viewDidLoad animated: Bool) {
+    open override func photobrowser(_ browser: XSLPhotoBrowser, viewDidLoad animated: Bool) {
         super.photobrowser(browser, viewDidLoad: animated)
         browser.view.addSubview(headerView)
         browser.view.addSubview(bottomView)
     }
-    override init() {
+    public override init() {
         super.init()
     }
-    @objc func quitBtnClick() {
+    @objc open func quitBtnClick() {
         self.dismiss()
     }
-    @objc func moreBtnClick() {
+    @objc open func moreBtnClick() {
 
     }
-    @objc func menuBtnClick() {
+    @objc open func menuBtnClick() {
 
     }
-    @objc func deleteBtnClick() {
+    @objc open func deleteBtnClick() {
         deleteBtnCallback?(browser?.pageIndex ?? 0)
     }
 }

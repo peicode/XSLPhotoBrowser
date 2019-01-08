@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
+open class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
     /// present转场时，内容缩张模式
     public var presentingZoomViewMode: () -> UIView.ContentMode = {
         return UIView.ContentMode.scaleAspectFill

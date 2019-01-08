@@ -8,12 +8,12 @@
 
 import UIKit
 
-class XSLPhotoBrowserZoomPresentingAnimator: XSLPhotoBrowserZoomAnimator , UIViewControllerAnimatedTransitioning {
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+open class XSLPhotoBrowserZoomPresentingAnimator: XSLPhotoBrowserZoomAnimator , UIViewControllerAnimatedTransitioning {
+    open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
 
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containView = transitionContext.containerView
         guard let zView = zoomView(),
               let startFrame = startFrame(containView),
@@ -34,7 +34,7 @@ class XSLPhotoBrowserZoomPresentingAnimator: XSLPhotoBrowserZoomAnimator , UIVie
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }
-    func fadeTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    open func fadeTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let containView = transitionContext.containerView
         let duration = self.transitionDuration(using: transitionContext)
         if let view = transitionContext.view(forKey: .to) {

@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class XSLPhotoFadePresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+open class XSLPhotoFadePresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.25
     }

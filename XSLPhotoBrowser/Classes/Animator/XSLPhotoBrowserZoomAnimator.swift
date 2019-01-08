@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XSLPhotoBrowserZoomAnimator: NSObject {
+open class XSLPhotoBrowserZoomAnimator: NSObject {
     /// 转场时做动画效果的视图
     public var zoomView: () -> UIView?
 

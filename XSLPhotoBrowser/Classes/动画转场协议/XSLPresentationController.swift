@@ -8,15 +8,15 @@
 
 import UIKit
 import Foundation
-class XSLPresentationController: UIPresentationController {
+open class XSLPresentationController: UIPresentationController {
     //蒙版
-    var maskView: UIView = {
+    open var maskView: UIView = {
         let view = UIView()
         view.backgroundColor = .black
         return view
     }()
     //transitionCoordinator返回协调器对象
-    override func presentationTransitionWillBegin() {
+    open override func presentationTransitionWillBegin() {
         super.presentationTransitionWillBegin()
         guard let containerView = self.containerView else { return }
         containerView.addSubview(maskView)
@@ -28,7 +28,7 @@ class XSLPresentationController: UIPresentationController {
         }, completion: nil)
     }
 
-    override func dismissalTransitionWillBegin() {
+    open override func dismissalTransitionWillBegin() {
         super.dismissalTransitionWillBegin()
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { _ in
             self.maskView.alpha = 0
