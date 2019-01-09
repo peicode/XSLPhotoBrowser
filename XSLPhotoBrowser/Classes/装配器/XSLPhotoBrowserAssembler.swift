@@ -86,6 +86,17 @@ open class XSLPhotoBrowserAssembler: XSLPhotoBrowserDelegate {
         super.photobrowser(browser, viewDidLoad: animated)
         browser.view.addSubview(headerView)
         browser.view.addSubview(bottomView)
+
+        self.cellIsDraging =  {
+            self.headerView.isHidden = true
+            self.bottomView.isHidden = true
+        }
+
+        self.cellEndDrag = {
+            self.headerView.isHidden = false
+            self.bottomView.isHidden = false
+        }
+
     }
     public override init() {
         super.init()
