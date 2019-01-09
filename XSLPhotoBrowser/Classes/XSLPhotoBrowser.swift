@@ -62,10 +62,10 @@ open class XSLPhotoBrowser: UIViewController {
         return collectionV
     }()
 
-    public init(pageIndex: Int, dataSource: XSLPhotoBrowserBaseDataSource, deledate: XSLPhotoBrowserBaseDelegate = XSLPhotoBrowserDelegate(), transDelegate: XSLPhotoBrowserTransitioningDelegate = XSLPhotoBrowserFadeTransitioning()) {
+    public init(pageIndex: Int, dataSource: XSLPhotoBrowserBaseDataSource, delegate: XSLPhotoBrowserBaseDelegate = XSLPhotoBrowserDelegate(), transDelegate: XSLPhotoBrowserTransitioningDelegate = XSLPhotoBrowserFadeTransitioning()) {
         self.pageIndex = pageIndex
         self.dataSource = dataSource
-        self.delegate = deledate
+        self.delegate = delegate
         self.transDelegate = transDelegate
 
         super.init(nibName: nil, bundle: nil)
@@ -73,7 +73,7 @@ open class XSLPhotoBrowser: UIViewController {
         self.transitioningDelegate = transDelegate
 
         dataSource.browser = self
-        deledate.browser = self
+        delegate.browser = self
         transDelegate.browser = self
     }
 
