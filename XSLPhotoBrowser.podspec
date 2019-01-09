@@ -4,8 +4,8 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "XSLPhotoBrowser"
-  s.version      = "0.0.5"
-  s.swift_version = "4.2"
+  s.version      = "0.0.6"
+  s.swift_version = "4.0"
   s.summary      = " swift版本的图片浏览器"
 
   # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   # s.platform     = :ios
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "8.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
   s.source_files  = "XSLPhotoBrowser/Classes/**/*.swift"
   s.static_framework = true
   s.dependency "Kingfisher"
+  s.dependency "SDWebImage"
 
 end
