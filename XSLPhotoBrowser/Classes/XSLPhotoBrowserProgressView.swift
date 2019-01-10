@@ -53,7 +53,7 @@ open class XSLPhotoBrowserProgressView: UIView {
 
     open func makeProgressPath(progress: CGFloat) -> CGPath {
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
-        let radius = bounds.midY - 2
+        let radius: CGFloat = bounds.midY - 2
         let path = UIBezierPath()
         path.move(to: center)
         path.addLine(to: CGPoint(x: bounds.midX, y: bounds.midY - radius))

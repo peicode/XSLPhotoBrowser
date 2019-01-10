@@ -49,10 +49,10 @@ open class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
             self.dismiss()
         }
         //开始拖拽
-        cell.panChangedCallback = { scale in
+        cell.panChangedCallback = { [weak self] scale in
             let alpha = scale * scale
-            self.browser?.transDelegate.maskAlpha = alpha
-            self.cellIsDraging?()
+            self?.browser?.transDelegate.maskAlpha = alpha
+            self?.cellIsDraging?()
             //需不需要显示状态栏
         }
         // 结束拖拽

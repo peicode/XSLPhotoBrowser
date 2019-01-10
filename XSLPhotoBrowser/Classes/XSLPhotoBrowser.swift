@@ -25,11 +25,12 @@ open class XSLPhotoBrowser: UIViewController {
     public var delegate: XSLPhotoBrowserBaseDelegate
 
     ///
-    var transDelegate: XSLPhotoBrowserTransitioningDelegate {
-        didSet {
-            self.transitioningDelegate = transDelegate
-        }
-    }
+    var transDelegate: XSLPhotoBrowserTransitioningDelegate
+//    {
+//        didSet {
+//            self.transitioningDelegate = transDelegate
+//        }
+//    }
 
     /// 返回正在执行转场动画的view
     public var transitionZoomView: UIView? {
@@ -92,7 +93,7 @@ open class XSLPhotoBrowser: UIViewController {
         dataSource.registerCell(for: collectionView)
 //        collectionView.scrollToItem(at: IndexPath(item: pageIndex, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: false)
         scrollToItem(index: pageIndex, at: .left, animation: true)
-        /// 强制刷新，才能在animateTransition()之前拿到colleCell的frame
+        /// 强制刷新，才能在animateTransition()之前拿到Cell的frame
         collectionView.layoutIfNeeded()
     }
 

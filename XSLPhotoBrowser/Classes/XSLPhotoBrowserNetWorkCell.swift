@@ -47,19 +47,21 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
         let image = photoLoader.imageCached(on: imageView, url: url)
         let placeholder = image ?? placeholder
         // 加载
-        photoLoader.setImage(on: imageView, url: url, placeholder: placeholder, progressBlock: { receivedSize, totalSize in
-            if totalSize > 0 {
-                self.progressView.progress = CGFloat(receivedSize) / CGFloat(totalSize)
-                if receivedSize < totalSize {
-                    self.progressView.isHidden = false
+        photoLoader.setImage(on: self.imageView, url: url, placeholder: placeholder, progressBlock: {
+                [weak self] (receivedSize, totalSize) in
+                if totalSize > 0 {
+                    DispatchQueue.main.async {
+                        self?.progressView.isHidden = false
+                        self?.progressView.progress = CGFloat(receivedSize) / CGFloat(totalSize)
+                    }
                 }
-            } else {
-                self.progressView.progress = 0
-            }
-        }) {
-            self.progressView.isHidden = true
-            self.setNeedsLayout()
-        }
-        setNeedsLayout()
+
+            }, completionHandler: { [weak self] in
+                DispatchQueue.main.async {
+                    self?.progressView.isHidden = true
+                    self?.setNeedsLayout()
+                    self?.layoutIfNeeded()
+                }
+        })
     }
 }
