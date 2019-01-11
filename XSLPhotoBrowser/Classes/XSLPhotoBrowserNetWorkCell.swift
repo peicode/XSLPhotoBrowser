@@ -15,7 +15,6 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     /// 初始化
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        progressView.isHidden = true
         contentView.addSubview(progressView)
     }
 
@@ -26,7 +25,7 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     /// 布局
     open override func layoutSubviews() {
         super.layoutSubviews()
-        progressView.center = CGPoint(x: contentView.bounds.width / 2, y: contentView.bounds.height / 2)
+        progressView.center = CGPoint(x: (contentView.bounds.width+30) / 2, y: contentView.bounds.height / 2)
     }
     open var photoLoader: XSLSDPhotoLoader {
         let loader = XSLSDPhotoLoader()
@@ -35,7 +34,7 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     /// 刷新数据
     open func reloadData(placeholder: UIImage?, autoloadURLString: String?) {
         // 重置环境
-        progressView.isHidden = true
+        //        progressView.isHidden = true
         progressView.progress = 0
         // url是否有效
         guard let urlString = autoloadURLString,let url = URL(string: urlString) else {
@@ -48,20 +47,23 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
         let placeholder = image ?? placeholder
         // 加载
         photoLoader.setImage(on: self.imageView, url: url, placeholder: placeholder, progressBlock: {
-                [weak self] (receivedSize, totalSize) in
-                if totalSize > 0 {
-                    DispatchQueue.main.async {
-                        self?.progressView.isHidden = false
-                        self?.progressView.progress = CGFloat(receivedSize) / CGFloat(totalSize)
-                    }
+            [weak self] (receivedSize, totalSize) in
+            print(CGFloat(receivedSize) / CGFloat(totalSize))
+            if totalSize > 0 {
+                DispatchQueue.main.async {
+                    self?.progressView.isHidden = false
+                    self?.progressView.progress = CGFloat(receivedSize) / CGFloat(totalSize)
                 }
-
-            }, completionHandler: { [weak self] in
+            } else {
                 DispatchQueue.main.async {
                     self?.progressView.isHidden = true
-                    self?.setNeedsLayout()
-                    self?.layoutIfNeeded()
                 }
+            }
+
+            }, completionHandler: { [weak self] in
+                self?.progressView.isHidden = true
+                self?.setNeedsLayout()
         })
+        setNeedsLayout()
     }
 }

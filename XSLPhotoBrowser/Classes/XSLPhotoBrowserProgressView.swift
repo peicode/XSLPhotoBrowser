@@ -22,8 +22,14 @@ open class XSLPhotoBrowserProgressView: UIView {
 
     open var circleLayer: CAShapeLayer!
     open var annulusLayer: CAShapeLayer!
+    private var originFrame: CGRect!
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        if self.frame.size.equalTo(.zero) {
+
+            self.frame = CGRect(x: (UIScreen.main.bounds.width+30), y: UIScreen.main.bounds.height / 2, width: 50, height: 50)
+        }
+        originFrame = frame
         setupUI()
         progress = 0
     }
@@ -41,22 +47,23 @@ open class XSLPhotoBrowserProgressView: UIView {
 
         annulusLayer = CAShapeLayer()
         annulusLayer.fillColor = strokeColor
+        annulusLayer.path = makeProgressPath(progress: 0.05)
         layer.addSublayer(annulusLayer)
     }
 
     open func makeCirclePath() -> CGPath {
-        let center = CGPoint(x: bounds.midX, y: bounds.maxY)
+        let center = CGPoint(x: originFrame.midX, y: originFrame.maxY)
         let path = UIBezierPath(arcCenter: center, radius: 30, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
         path.lineWidth = 1
         return path.cgPath
     }
 
     open func makeProgressPath(progress: CGFloat) -> CGPath {
-        let center = CGPoint(x: bounds.midX, y: bounds.midY)
+        let center = CGPoint(x: originFrame.midX, y: originFrame.midY)
         let radius: CGFloat = 28
         let path = UIBezierPath()
         path.move(to: center)
-        path.addLine(to: CGPoint(x: bounds.midX, y: bounds.midY - radius))
+        path.addLine(to: CGPoint(x: originFrame.midX, y: originFrame.midY - radius))
         path.addArc(withCenter: center, radius: radius, startAngle: -CGFloat.pi * 0.5, endAngle: -CGFloat.pi * 0.5 + progress * CGFloat.pi * 2, clockwise: true)
         path.close()
         path.lineWidth = 1

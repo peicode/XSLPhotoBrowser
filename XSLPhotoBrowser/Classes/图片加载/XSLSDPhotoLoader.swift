@@ -22,7 +22,7 @@ open class XSLSDPhotoLoader: XSLPhotoLoader {
         imageView.sd_setImage(with: url, placeholderImage: placeholder, options: [], progress: { (reciverData, totalData, _) in
             progressBlock(Int64(reciverData), Int64(totalData))
         }) { (_, _, _, _) in
-
+            completionHandler()
         }
     }
 
