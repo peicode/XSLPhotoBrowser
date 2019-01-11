@@ -26,7 +26,6 @@ open class XSLPhotoBrowserProgressView: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         if self.frame.size.equalTo(.zero) {
-
             self.frame = CGRect(x: (UIScreen.main.bounds.width+30), y: UIScreen.main.bounds.height / 2, width: 50, height: 50)
         }
         originFrame = frame
