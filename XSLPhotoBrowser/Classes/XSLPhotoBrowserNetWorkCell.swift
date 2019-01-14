@@ -26,6 +26,7 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     open override func layoutSubviews() {
         super.layoutSubviews()
         progressView.center = CGPoint(x: (contentView.bounds.width+30) / 2, y: contentView.bounds.height / 2)
+        contentView.addSubview(progressView)
     }
     open var photoLoader: XSLSDPhotoLoader {
         let loader = XSLSDPhotoLoader()
