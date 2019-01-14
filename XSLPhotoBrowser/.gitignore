@@ -6,3 +6,4 @@ project.xcworkspace/
 xcuserdata/
 UserInterface.xcuserstate 
 ../XSLPhotoBrowser.xcworkspace/xcuserdata/
+*/.DS_Store
