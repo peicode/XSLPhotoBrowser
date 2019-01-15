@@ -26,7 +26,6 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     open override func layoutSubviews() {
         super.layoutSubviews()
         progressView.center = CGPoint(x: (contentView.bounds.width+30) / 2, y: contentView.bounds.height / 2)
-        contentView.addSubview(progressView)
     }
     open var photoLoader: XSLSDPhotoLoader {
         let loader = XSLSDPhotoLoader()
@@ -35,7 +34,7 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
     /// 刷新数据
     open func reloadData(placeholder: UIImage?, autoloadURLString: String?) {
         // 重置环境
-        //        progressView.isHidden = true
+        progressView.isHidden = true
         progressView.progress = 0
         // url是否有效
         guard let urlString = autoloadURLString,let url = URL(string: urlString) else {
@@ -49,7 +48,6 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
         // 加载
         photoLoader.setImage(on: self.imageView, url: url, placeholder: placeholder, progressBlock: {
             [weak self] (receivedSize, totalSize) in
-            print(CGFloat(receivedSize) / CGFloat(totalSize))
             if totalSize > 0 {
                 DispatchQueue.main.async {
                     self?.progressView.isHidden = false
@@ -57,7 +55,7 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
                 }
             } else {
                 DispatchQueue.main.async {
-                    self?.progressView.isHidden = true
+                    self?.progressView.progress = 0
                 }
             }
 

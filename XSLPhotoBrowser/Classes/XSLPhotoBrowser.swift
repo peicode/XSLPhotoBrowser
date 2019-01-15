@@ -24,22 +24,20 @@ open class XSLPhotoBrowser: UIViewController {
     /// collectionView 代理
     public var delegate: XSLPhotoBrowserBaseDelegate
 
-    ///
+    /// UIViewController 转场动画协议
     var transDelegate: XSLPhotoBrowserTransitioningDelegate
-//    {
-//        didSet {
-//            self.transitioningDelegate = transDelegate
-//        }
-//    }
 
-    /// 返回正在执行转场动画的view
-    public var transitionZoomView: UIView? {
-        return delegate.transitionZoomView(self, pageIndex: pageIndex)
+
+    /// 返回正在执行转场动画的image
+    public var transitionImage: UIImage? {
+        return delegate.transitionImage(self, pageIndex: pageIndex)
     }
+
     /// 返回对应collectionViewCell的image
     public var imageForCollectionViewCell: UIView? {
         return delegate.displayingContentView(self, pageIndex: pageIndex)
     }
+
     public lazy var flowLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal

@@ -66,9 +66,9 @@ open class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
                 print("JXPhotoBrowser.Transitioning.Zoom 已被释放.")
                 return nil
             }
-            let view = self.browser?.transitionZoomView
-            view?.contentMode = self.presentingZoomViewMode()
-            view?.clipsToBounds = true
+            let view = UIImageView(image: self.browser?.transitionImage)
+            view.contentMode = self.presentingZoomViewMode()
+            view.clipsToBounds = true
             return view
         }, startFrame: { view -> CGRect? in
             if let browser = self?.browser {
@@ -90,9 +90,9 @@ open class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
                 print("JXPhotoBrowser.Transitioning.Zoom 已被释放.")
                 return nil
             }
-            let view = self.browser?.transitionZoomView
-            view?.contentMode = self.dismissingZoomViewMode()
-            view?.clipsToBounds = true
+            let view = UIImageView(image: self.browser?.transitionImage)
+            view.contentMode = self.dismissingZoomViewMode()
+            view.clipsToBounds = true
             return view
         }, startFrame: { view -> CGRect? in
             if let contentView = self?.browser?.imageForCollectionViewCell {

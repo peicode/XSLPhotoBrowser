@@ -15,10 +15,8 @@ public protocol XSLPhotoBrowserBaseDelegate: UICollectionViewDelegate {
 
     /// 取当前显示页的内容视图。比如是 ImageView.
     func displayingContentView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView?
-
-    /// 取转场动画视图
-    func transitionZoomView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView?
-
+    /// 取当前动画的image
+    func transitionImage(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIImage?
     /// 关闭
     func dismissPhotoBrowser(_ browser: XSLPhotoBrowser)
 
@@ -81,16 +79,16 @@ open class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
         browser?.pageIndex = Int(scrollView.contentOffset.x / scrollView.bounds.width)
     }
 
+    open func transitionImage(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIImage? {
+        let indexPath = IndexPath(item: pageIndex, section: 0)
+        let cell = browser.collectionView.cellForItem(at: indexPath) as? XSLBaseCollectionViewCell
+        return cell?.imageView.image
+    }
+    
     open func displayingContentView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView? {
         let indexPath = IndexPath.init(item: pageIndex, section: 0)
         let cell = browser.collectionView.cellForItem(at: indexPath) as? XSLBaseCollectionViewCell
         return cell?.imageView
-    }
-
-    open func transitionZoomView(_ browser: XSLPhotoBrowser, pageIndex: Int) -> UIView? {
-        let indexPath = IndexPath(item: pageIndex, section: 0)
-        let cell = browser.collectionView.cellForItem(at: indexPath) as? XSLBaseCollectionViewCell
-        return UIImageView(image: cell?.imageView.image)
     }
 
     open func dismissPhotoBrowser(_ browser: XSLPhotoBrowser) {
