@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "XSLPhotoBrowser"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.swift_version = "4.0"
   s.summary      = " swift版本的图片浏览器"
 
