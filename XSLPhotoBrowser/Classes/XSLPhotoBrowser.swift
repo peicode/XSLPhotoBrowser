@@ -76,6 +76,9 @@ open class XSLPhotoBrowser: UIViewController {
         transDelegate.browser = self
     }
 
+    public func show() {
+        UIViewController.xsl.topMost?.present(self, animated: true, completion: nil)
+    }
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

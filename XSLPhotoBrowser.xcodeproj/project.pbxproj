@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3954023321F6C4DC00948FE7 /* XSLNameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954023221F6C4DC00948FE7 /* XSLNameSpace.swift */; };
+		3954023521F6C54A00948FE7 /* UIViewController+XSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954023421F6C54A00948FE7 /* UIViewController+XSL.swift */; };
 		399A9E4921D722D100333466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E4821D722D100333466 /* AppDelegate.swift */; };
 		399A9E4B21D722D100333466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A9E4A21D722D100333466 /* ViewController.swift */; };
 		399A9E4E21D722D100333466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399A9E4C21D722D100333466 /* Main.storyboard */; };
@@ -62,6 +64,8 @@
 /* Begin PBXFileReference section */
 		267FA88CC50034390592ADE1 /* Pods-XSLPhotoBrowserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSLPhotoBrowserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSLPhotoBrowserTests/Pods-XSLPhotoBrowserTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3167F62F857DBF86E29EB45A /* Pods-XSLPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSLPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSLPhotoBrowser/Pods-XSLPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		3954023221F6C4DC00948FE7 /* XSLNameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLNameSpace.swift; sourceTree = "<group>"; };
+		3954023421F6C54A00948FE7 /* UIViewController+XSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+XSL.swift"; sourceTree = "<group>"; };
 		399A9E4521D722D100333466 /* XSLPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSLPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399A9E4821D722D100333466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399A9E4A21D722D100333466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3954023121F6C48400948FE7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3954023221F6C4DC00948FE7 /* XSLNameSpace.swift */,
+				3954023421F6C54A00948FE7 /* UIViewController+XSL.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		399A9E3C21D722D100333466 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +215,7 @@
 		39B1005021D757FB00E234DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3954023121F6C48400948FE7 /* Tools */,
 				39B1005121D757FB00E234DF /* DataSource */,
 				39B1005521D757FB00E234DF /* 动画转场协议 */,
 				39B1005A21D757FB00E234DF /* Animator */,
@@ -510,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3954023521F6C54A00948FE7 /* UIViewController+XSL.swift in Sources */,
 				39E4BD6D21E71E2A008B278A /* XSLPhotoBrowserCustomDelegate.swift in Sources */,
 				39B1007A21D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift in Sources */,
 				39B1006C21D757FB00E234DF /* XSLLocalImageDataSource.swift in Sources */,
@@ -533,6 +548,7 @@
 				39B1007921D757FB00E234DF /* XSLPhotoLoader.swift in Sources */,
 				39E4BD6B21E602EB008B278A /* XSLKingFisherLoader.swift in Sources */,
 				39B1007B21D757FB00E234DF /* XSLPhotoBrowserDelegate.swift in Sources */,
+				3954023321F6C4DC00948FE7 /* XSLNameSpace.swift in Sources */,
 				39B1007821D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift in Sources */,
 				39B1007521D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift in Sources */,
 			);
