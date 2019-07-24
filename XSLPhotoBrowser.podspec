@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
   			图片浏览器——打开本地和网络图片，依赖Kingfisher，包含fade和Zoom动画。
                    DESC
-  s.homepage     = "https://github.com/PEIcode/XSLPhotoBrowser"
+  s.homepage     = "https://github.com/peicode/XSLPhotoBrowser"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -30,11 +30,11 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
-  s.source       = { :git => "https://github.com/PEIcode/XSLPhotoBrowser.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/peicode/XSLPhotoBrowser.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
