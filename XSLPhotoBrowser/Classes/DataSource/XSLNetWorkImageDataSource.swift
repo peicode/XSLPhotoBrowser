@@ -13,7 +13,7 @@ open class XSLNetWorkImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
     weak public var browser: XSLPhotoBrowser?
     let cellID = "XSLPhotoBrowserNetWorkCell"
     /// 共有多少项
-    public var numberOfItemsCallback: () -> Int
+    public var numberOfItems: Int
 
     /// 每一项的图片对象
     public var placehodleImageCallback: (Int) -> UIImage?
@@ -22,13 +22,14 @@ open class XSLNetWorkImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
     public var loadURLImageCallback: (Int) -> String?
 
 
-    public init(numberOfItems: @escaping () -> Int, placeholder: @escaping (Int) -> UIImage?, urlCallback: @escaping (Int) -> String?) {
-        self.numberOfItemsCallback = numberOfItems
+    public init(numberOfItems: Int, placeholder: @escaping (Int) -> UIImage?, urlCallback: @escaping (Int) -> String?) {
+        self.numberOfItems = numberOfItems
         self.placehodleImageCallback = placeholder
         self.loadURLImageCallback = urlCallback
     }
+
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return numberOfItemsCallback()
+        return numberOfItems
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -36,7 +37,7 @@ open class XSLNetWorkImageDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
         cell.reloadData(placeholder: placehodleImageCallback(indexPath.item), autoloadURLString: loadURLImageCallback(indexPath.item))
         return cell
     }
-    
+
     public func registerCell(for collectionView: UICollectionView) {
         collectionView.register(XSLPhotoBrowserNetWorkCell.self, forCellWithReuseIdentifier: "XSLPhotoBrowserNetWorkCell")
     }

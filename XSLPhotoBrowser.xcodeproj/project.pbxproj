@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,9 +38,9 @@
 		39B1007F21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006A21D757FB00E234DF /* XSLPhotoBrowserAssembler.swift */; };
 		39B1009B21D7617A00E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1005421D757FB00E234DF /* XSLPhotoBrowserBaseDataSource.swift */; };
 		39E4BD6A21E5F390008B278A /* XSLSDPhotoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4BD6921E5F390008B278A /* XSLSDPhotoLoader.swift */; };
-		39E4BD6B21E602EB008B278A /* XSLKingFisherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */; };
 		39E4BD6D21E71E2A008B278A /* XSLPhotoBrowserCustomDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4BD6C21E71E2A008B278A /* XSLPhotoBrowserCustomDelegate.swift */; };
 		39E9B71222E86489002B0676 /* XSLPhotoBrowser.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39E9B71122E86489002B0676 /* XSLPhotoBrowser.podspec */; };
+		39E9B71422E868D5002B0676 /* XSLFinalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E9B71322E868D5002B0676 /* XSLFinalDataSource.swift */; };
 		60235DE3636146470772F955 /* Pods_XSLPhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B123585982E97D5C89335 /* Pods_XSLPhotoBrowser.framework */; };
 		91F3FEB2327B7C4166349AF3 /* Pods_XSLPhotoBrowserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E9DC604526E42E4FF0AFAA /* Pods_XSLPhotoBrowserUITests.framework */; };
 		F015F9DDA3F4890A386F442C /* Pods_XSLPhotoBrowserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFE4AEB33EFB3FF4C0E13F2 /* Pods_XSLPhotoBrowserTests.framework */; };
@@ -94,7 +94,6 @@
 		39B1005D21D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoFadePresentingAnimator.swift; sourceTree = "<group>"; };
 		39B1005E21D757FB00E234DF /* XSLPhotoBrowserZoomDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomDismissingAnimator.swift; sourceTree = "<group>"; };
 		39B1005F21D757FB00E234DF /* XSLPhotoBrowserZoomPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserZoomPresentingAnimator.swift; sourceTree = "<group>"; };
-		39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLKingFisherLoader.swift; sourceTree = "<group>"; };
 		39B1006221D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserTransitioningDelegate.swift; sourceTree = "<group>"; };
 		39B1006321D757FB00E234DF /* XSLPhotoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoLoader.swift; sourceTree = "<group>"; };
 		39B1006421D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserNetWorkCell.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		39E4BD6921E5F390008B278A /* XSLSDPhotoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLSDPhotoLoader.swift; sourceTree = "<group>"; };
 		39E4BD6C21E71E2A008B278A /* XSLPhotoBrowserCustomDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLPhotoBrowserCustomDelegate.swift; sourceTree = "<group>"; };
 		39E9B71122E86489002B0676 /* XSLPhotoBrowser.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XSLPhotoBrowser.podspec; sourceTree = SOURCE_ROOT; };
+		39E9B71322E868D5002B0676 /* XSLFinalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSLFinalDataSource.swift; sourceTree = "<group>"; };
 		4C0900D13B5DCF5D1F0D65FD /* Pods-XSLPhotoBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSLPhotoBrowserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSLPhotoBrowserUITests/Pods-XSLPhotoBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5C03D78B0C09261F5DD99600 /* Pods-XSLPhotoBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSLPhotoBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSLPhotoBrowserTests/Pods-XSLPhotoBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
 		8DFE4AEB33EFB3FF4C0E13F2 /* Pods_XSLPhotoBrowserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSLPhotoBrowserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,12 +225,12 @@
 				39B1005521D757FB00E234DF /* 动画转场协议 */,
 				39B1005A21D757FB00E234DF /* Animator */,
 				39B1006021D757FB00E234DF /* 图片加载 */,
+				39B1006921D757FB00E234DF /* 自定义 */,
 				39B1006421D757FB00E234DF /* XSLPhotoBrowserNetWorkCell.swift */,
 				39B1006521D757FB00E234DF /* XSLPhotoBrowserDelegate.swift */,
 				39B1006621D757FB00E234DF /* XSLPhotoBrowserProgressView.swift */,
 				39B1006721D757FB00E234DF /* XSLBaseCollectionViewCell.swift */,
 				39B1006821D757FB00E234DF /* XSLPhotoBrowser.swift */,
-				39B1006921D757FB00E234DF /* 自定义 */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -242,6 +242,7 @@
 				39B1005221D757FB00E234DF /* XSLNetWorkImageDataSource.swift */,
 				39B1005321D757FB00E234DF /* XSLLocalImageDataSource.swift */,
 				3927BD5922E026E1005269B6 /* XSLPhotoBrowserDataSource.swift */,
+				39E9B71322E868D5002B0676 /* XSLFinalDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -273,7 +274,6 @@
 		39B1006021D757FB00E234DF /* 图片加载 */ = {
 			isa = PBXGroup;
 			children = (
-				39B1006121D757FB00E234DF /* XSLKingFisherLoader.swift */,
 				39B1006321D757FB00E234DF /* XSLPhotoLoader.swift */,
 				39E4BD6921E5F390008B278A /* XSLSDPhotoLoader.swift */,
 			);
@@ -484,22 +484,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XSLPhotoBrowser/Pods-XSLPhotoBrowser-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XSLPhotoBrowser/Pods-XSLPhotoBrowser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XSLPhotoBrowser/Pods-XSLPhotoBrowser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSLPhotoBrowser/Pods-XSLPhotoBrowser-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XSLPhotoBrowser/Pods-XSLPhotoBrowser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDF707812CE59126812C098F /* [CP] Check Pods Manifest.lock */ = {
@@ -546,6 +539,7 @@
 				3927BD5A22E026E1005269B6 /* XSLPhotoBrowserDataSource.swift in Sources */,
 				39B1007421D757FB00E234DF /* XSLPhotoFadePresentingAnimator.swift in Sources */,
 				39B1009B21D7617A00E234DF /* XSLPhotoBrowserBaseDataSource.swift in Sources */,
+				39E9B71422E868D5002B0676 /* XSLFinalDataSource.swift in Sources */,
 				39B1006F21D757FB00E234DF /* XSLPhotoBrowserZoomtransitioning.swift in Sources */,
 				39B1007E21D757FB00E234DF /* XSLPhotoBrowser.swift in Sources */,
 				39B1007221D757FB00E234DF /* XSLPhotoBrowserZoomAnimator.swift in Sources */,
@@ -554,7 +548,6 @@
 				39B1007D21D757FB00E234DF /* XSLBaseCollectionViewCell.swift in Sources */,
 				39B1007021D757FB00E234DF /* XSLPhotoBrowserFadeTransitioning.swift in Sources */,
 				39B1007921D757FB00E234DF /* XSLPhotoLoader.swift in Sources */,
-				39E4BD6B21E602EB008B278A /* XSLKingFisherLoader.swift in Sources */,
 				39B1007B21D757FB00E234DF /* XSLPhotoBrowserDelegate.swift in Sources */,
 				3954023321F6C4DC00948FE7 /* XSLNameSpace.swift in Sources */,
 				39B1007821D757FB00E234DF /* XSLPhotoBrowserTransitioningDelegate.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 open class XSLPhotoBrowserZoomPresentingAnimator: XSLPhotoBrowserZoomAnimator , UIViewControllerAnimatedTransitioning {
     open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 0.2
     }
 
     open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
