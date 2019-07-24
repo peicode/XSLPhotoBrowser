@@ -37,6 +37,7 @@ open class XSLPhotoBrowserCustomDelegate: XSLPhotoBrowserDelegate {
         }
         return 0
     }()
+    
     ///
     open lazy var headerView: UIView = {
         let view = UIView(frame: CGRect(x: 0, y: SafeTop(y: 0), width: UIScreen.main.bounds.width, height: 44))

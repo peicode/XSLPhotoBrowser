@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B9431F4DB18443D5D25A833D8B75B6F9"
+               BlueprintIdentifier = "5D3B16D9754162C09AF4E533B1DA26BD"
                BuildableName = "Pods_XSLPhotoBrowserTests.framework"
                BlueprintName = "Pods-XSLPhotoBrowserTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B9431F4DB18443D5D25A833D8B75B6F9"
+            BlueprintIdentifier = "5D3B16D9754162C09AF4E533B1DA26BD"
             BuildableName = "Pods_XSLPhotoBrowserTests.framework"
             BlueprintName = "Pods-XSLPhotoBrowserTests"
             ReferencedContainer = "container:Pods.xcodeproj">

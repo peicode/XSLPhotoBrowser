@@ -43,22 +43,21 @@ open class XSLPhotoBrowserNetWorkCell: XSLBaseCollectionViewCell {
             return
         }
         // 取缓存
-        let image = photoLoader.imageCached(on: imageView, url: url)
+        let image = photoLoader.imageCached(url: url)
         let placeholder = image ?? placeholder
         // 加载
         photoLoader.setImage(on: self.imageView, url: url, placeholder: placeholder, progressBlock: {
             [weak self] (receivedSize, totalSize) in
-            if totalSize > 0 {
-                DispatchQueue.main.async {
-                    self?.progressView.isHidden = false
-                    self?.progressView.progress = CGFloat(receivedSize) / CGFloat(totalSize)
+                if totalSize > 0 {
+                    DispatchQueue.main.async {
+                        self?.progressView.isHidden = false
+                        self?.progressView.progress = CGFloat(receivedSize) / CGFloat(totalSize)
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        self?.progressView.progress = 0
+                    }
                 }
-            } else {
-                DispatchQueue.main.async {
-                    self?.progressView.progress = 0
-                }
-            }
-
             }, completionHandler: { [weak self] in
                 self?.progressView.isHidden = true
                 self?.setNeedsLayout()

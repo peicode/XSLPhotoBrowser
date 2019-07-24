@@ -11,7 +11,7 @@ import Kingfisher
 
 public class XSLKingFisherLoader: XSLPhotoLoader {
 
-    public func imageCached(on imageView: UIImageView, url: URL?) -> UIImage? {
+    public func imageCached(url: URL?) -> UIImage? {
         guard let url = url else {
             return nil
         }

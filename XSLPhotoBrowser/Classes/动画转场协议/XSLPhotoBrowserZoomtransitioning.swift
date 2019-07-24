@@ -18,7 +18,6 @@ open class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
     public var dismissingZoomViewMode: () -> UIView.ContentMode = {
         return UIView.ContentMode.scaleAspectFill
     }
-
     //
     // MARK: - 用户传入 ZoomView 的前置页面 Frame
     //
@@ -63,7 +62,6 @@ open class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
         weak var `self` = self
         presentingAnimator = XSLPhotoBrowserZoomPresentingAnimator(zoomView: { () -> UIView? in
             guard let `self` = self else {
-                print("JXPhotoBrowser.Transitioning.Zoom 已被释放.")
                 return nil
             }
             let view = UIImageView(image: self.browser?.transitionImage)
@@ -87,7 +85,6 @@ open class XSLPhotoBrowserZoomtransitioning: XSLPhotoBrowserTransitioning {
         weak var `self` = self
         dismissAnimator = XSLPhotoBrowserZoomDismissingAnimator(zoomView: { () -> UIView? in
             guard let `self` = self else {
-                print("JXPhotoBrowser.Transitioning.Zoom 已被释放.")
                 return nil
             }
             let view = UIImageView(image: self.browser?.transitionImage)
