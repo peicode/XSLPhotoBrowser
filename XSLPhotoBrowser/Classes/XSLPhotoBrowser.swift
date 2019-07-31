@@ -45,6 +45,7 @@ open class XSLPhotoBrowser: UIViewController {
         layout.itemSize = view.bounds.size
         return layout
     }()
+
     public lazy var collectionView: UICollectionView = {
         let collectionV = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionV.backgroundColor = UIColor.clear

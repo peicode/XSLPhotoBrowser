@@ -42,5 +42,5 @@ Pod::Spec.new do |s|
   s.source_files  = "XSLPhotoBrowser/Classes/**/*.swift"
   s.static_framework = true
   s.dependency "SDWebImage", '~> 4.4.6'
-
+  s.dependency "Hero"
 end
