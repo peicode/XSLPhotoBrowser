@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class XSLFinalDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
     /// 弱引用 PhotoBrowser
@@ -47,6 +48,7 @@ class XSLFinalDataSource: NSObject, XSLPhotoBrowserBaseDataSource {
             cell.progressView.isHidden = false
             cell.reloadData(placeholder: placeholder, autoloadURLString: urlString)
         }
+        cell.imageView.hero.id = "XSLPhotoBrowser\(indexPath.item)"
         return cell
     }
 

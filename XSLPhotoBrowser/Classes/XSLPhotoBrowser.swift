@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Hero
 open class XSLPhotoBrowser: UIViewController {
     /// 传入图片的index
     public var pageIndex: Int = 0 {
@@ -25,7 +25,7 @@ open class XSLPhotoBrowser: UIViewController {
     public var delegate: XSLPhotoBrowserBaseDelegate
 
     /// UIViewController 转场动画协议
-    var transDelegate: XSLPhotoBrowserTransitioningDelegate
+    var transDelegate: XSLPhotoBrowserTransitioningDelegate?
 
 
     /// 返回正在执行转场动画的image
@@ -61,6 +61,16 @@ open class XSLPhotoBrowser: UIViewController {
 //        collectionV.register(XSLBaseCollectionViewCell.self, forCellWithReuseIdentifier: "XSLBaseCollectionViewCell")
         return collectionV
     }()
+
+    public init(currentIndex: Int, dataSource: XSLPhotoBrowserBaseDataSource, delegate: XSLPhotoBrowserBaseDelegate = XSLPhotoBrowserDelegate()) {
+        self.pageIndex = currentIndex
+        self.dataSource = dataSource
+        self.delegate = delegate
+
+        super.init(nibName: nil, bundle: nil)
+        dataSource.browser = self
+        delegate.browser = self
+    }
 
     public init(pageIndex: Int, dataSource: XSLPhotoBrowserBaseDataSource, delegate: XSLPhotoBrowserBaseDelegate = XSLPhotoBrowserDelegate(), transDelegate: XSLPhotoBrowserTransitioningDelegate = XSLPhotoBrowserFadeTransitioning()) {
         self.pageIndex = pageIndex

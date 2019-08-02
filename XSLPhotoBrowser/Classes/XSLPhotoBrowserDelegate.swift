@@ -48,8 +48,8 @@ open class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
         }
         //开始拖拽
         cell.panChangedCallback = { [weak self] scale in
-            let alpha = scale * scale
-            self?.browser?.transDelegate.maskAlpha = alpha
+//            let alpha = scale * scale
+//            self?.browser?.transDelegate.maskAlpha = alpha
             self?.cellIsDraging?()
             //需不需要显示状态栏
         }
@@ -58,7 +58,7 @@ open class XSLPhotoBrowserDelegate: NSObject, XSLPhotoBrowserBaseDelegate {
             if isDown {
                 self?.dismiss()
             } else {
-                self?.browser?.transDelegate.maskAlpha = 1.0
+//                self?.browser?.transDelegate.maskAlpha = 1.0
                 self?.cellEndDrag?()
             }
         }
